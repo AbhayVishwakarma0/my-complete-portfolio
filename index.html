@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abhay Vishwakarma - Full Stack Web Developer, Data Analyst and YouTuber.">
+    <title>Abhay Vishwakarma | Portfolio</title>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated background bars -->
+    <div class="bars-animation" aria-hidden="true">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Abhay<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <ul id="navMenu">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="theme-picker-item">
+                    <div class="theme-picker">
+                        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Choose portfolio color" aria-expanded="false">
+                            <i class='bx bx-palette'></i>
+                        </button>
+                        <div class="theme-palette" id="themePalette" aria-label="Portfolio color themes">
+                            <button type="button" class="theme-swatch" data-theme="emerald" style="--swatch:#7cf03d" aria-label="Emerald"></button>
+                            <button type="button" class="theme-swatch" data-theme="ocean" style="--swatch:#38bdf8" aria-label="Ocean"></button>
+                            <button type="button" class="theme-swatch" data-theme="blue" style="--swatch:#3b82f6" aria-label="Blue"></button>
+                            <button type="button" class="theme-swatch" data-theme="indigo" style="--swatch:#6366f1" aria-label="Indigo"></button>
+                            <button type="button" class="theme-swatch" data-theme="violet" style="--swatch:#8b5cf6" aria-label="Violet"></button>
+                            <button type="button" class="theme-swatch" data-theme="magenta" style="--swatch:#d946ef" aria-label="Magenta"></button>
+                            <button type="button" class="theme-swatch" data-theme="rose" style="--swatch:#fb7185" aria-label="Rose"></button>
+                            <button type="button" class="theme-swatch" data-theme="coral" style="--swatch:#f97316" aria-label="Coral"></button>
+                            <button type="button" class="theme-swatch" data-theme="amber" style="--swatch:#fbbf24" aria-label="Amber"></button>
+                            <button type="button" class="theme-swatch" data-theme="lime" style="--swatch:#a3e635" aria-label="Lime"></button>
+                            <button type="button" class="theme-swatch" data-theme="cyan" style="--swatch:#22d3ee" aria-label="Cyan"></button>
+                            <button type="button" class="theme-swatch" data-theme="teal" style="--swatch:#14b8a6" aria-label="Teal"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home-info reveal">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+                <h1>Abhay Vishwakarma</h1>
+                <h2>I'm a
+                    <span style="--i:3;" data-text="Web Developer">Web Developer</span>
+                    <span style="--i:2;" data-text="Data Analyst">Data Analyst</span>
+                    <span style="--i:1;" data-text="YouTuber">YouTuber</span>
+                </h2>
+                <p class="hero-copy">
+                    As a Full Stack Web Developer, I build dynamic websites and applications,
+                    integrating front-end design with back-end functionality for seamless user
+                    experiences and efficient performance.
+                </p>
+
+                <div class="btn-one">
+                    <a href="CV.jpg" class="btn cv-download" target="_blank" rel="noopener" download="Abhay-Vishwakarma-CV.jpg">
+                        <img src="cv.jpg" alt="CV preview" class="cv-preview" loading="lazy">
+                        <i class='bx bx-download'></i> Download CV
+                    </a>
+
+                    <div class="sci" aria-label="Social links">
+                        <a href="https://github.com/AbhayVishwakarma0" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abhayvishwakarma0/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://www.instagram.com/cometomotivation/?hl=en" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCGFz4HO8mNDKqQVMHL9TrDw" target="_blank" rel="noopener" aria-label="YouTube">
+                            <i class='bx bxl-youtube'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-img reveal">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="homeimage.png" alt="Abhay Vishwakarma">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow"></p>
+                <h2 class="heading">About <span>Me</span></h2>
+            </div>
+
+            <div class="about-layout">
+                <div class="about-img reveal">
+                    <img src="aboutimage.jpeg" alt="Abhay Vishwakarma">
+                    <span class="circle-spin"></span>
+                </div>
+
+                <div class="about-content reveal">
+                    <p class="section-tag">Full Stack Developer</p>
+                    <h3>Turning ideas into useful digital experiences.</h3>
+                    <p>
+                        I enjoy creating modern, responsive and practical digital products.
+                        My work combines clean interface design, development and problem-solving
+                        to build websites that are easy to use and focused on real business goals.
+                    </p>
+                    <div class="about-stats">
+                        <div><strong>Web</strong><span>Development</span></div>
+                        <div><strong>UI/UX</strong><span>Design</span></div>
+                        <div><strong>Data</strong><span>Analytics</span></div>
+                        <div><strong>Ai</strong><span>Expert</span></div>
+                    </div>
+                    <a href="#portfolio" class="btn">Explore My Work <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio - intentionally between About and Services -->
+        <section class="portfolio section" id="portfolio">
+            <div class="section-heading reveal">
+                <p class="eyebrow"></p>
+                <h2 class="heading">My <span>Portfolio</span></h2>
+                <p class="section-intro">A selection of projects and digital work, presented with a focus on clean design, useful functionality and real-world results.</p>
+            </div>
+
+            <div class="portfolio-carousel" id="portfolioCarousel">
+                <div class="portfolio-viewport">
+                    <div class="portfolio-track">
+                <article class="project-card reveal">
+                    <div class="project-icon"><i class='bx bx-code-alt'></i></div>
+                    <div class="project-content">
+                        <span class="project-number">01</span>
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio focused on presenting skills, services and projects professionally.</p>
+                        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <a href="YOUR-LIVE-PREVIEW-URL-1" target="_blank" rel="noopener" class="project-link live-preview-link">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-icon"><i class='bx bx-buildings'></i></div>
+                    <div class="project-content">
+                        <span class="project-number">02</span>
+                        <h3>Business Website</h3>
+                        <p>A conversion-focused website concept for a local business with clear services and contact actions.</p>
+                        <div class="tags"><span>Responsive</span><span>UI/UX</span><span>Frontend</span></div>
+                        <a href="YOUR-LIVE-PREVIEW-URL-2" target="_blank" rel="noopener" class="project-link live-preview-link">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+                    <div class="project-content">
+                        <span class="project-number">03</span>
+                        <h3>Data Analytics</h3>
+                        <p>A data-oriented project space for dashboards, analysis, visualisation and actionable insights.</p>
+                        <div class="tags"><span>Data</span><span>Analysis</span><span>Dashboard</span></div>
+                        <a href="YOUR-LIVE-PREVIEW-URL-3" target="_blank" rel="noopener" class="project-link live-preview-link">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </article>
+                    </div>
+                </div>
+                <div class="portfolio-controls" aria-label="Portfolio navigation">
+                    <button type="button" class="portfolio-arrow portfolio-prev" aria-label="Previous project"><i class='bx bx-chevron-left'></i></button>
+                    <button type="button" class="portfolio-reset" aria-label="Back to first project"><i class='bx bx-home-alt-2'></i></button>
+                    <button type="button" class="portfolio-arrow portfolio-next" aria-label="Next project"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Experience -->
+        <section class="experience section" id="experience">
+            <div class="section-heading reveal">
+                <h2 class="heading">My <span>Experience</span></h2>
+                <p class="section-intro">A concise timeline of my professional journey, roles and hands-on experience.</p>
+            </div>
+
+            <div class="experience-layout">
+                <div class="experience-summary reveal">
+                    <span class="experience-badge">PROFESSIONAL JOURNEY</span>
+                    <h3>Experience that grows with every project.</h3>
+                    <p>Use this section to present your years of experience, roles, organisations and the kind of work you have handled — in a clean, LinkedIn-inspired format.</p>
+                    <div class="experience-years">
+                        <div class="experience-stat">
+                            <strong>0+</strong>
+                            <span>Years of Experience</span>
+                        </div>
+                        <div class="experience-stat">
+                            <strong>6+</strong>
+                            <span>Clients</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-timeline">
+                    <article class="experience-item reveal">
+                        <div class="experience-marker"><i class='bx bx-briefcase'></i></div>
+                        <div class="experience-card">
+                            <div class="experience-meta"><span>YOUR ROLE</span><time>2024 — Present</time></div>
+                            <h3>Full Stack Web Developer</h3>
+                            <h4>Your Company / Freelance</h4>
+                            <p>Describe your responsibilities, projects, technologies and the value you delivered in this role.</p>
+                        </div>
+                    </article>
+
+                    <article class="experience-item reveal">
+                        <div class="experience-marker"><i class='bx bx-bar-chart-alt-2'></i></div>
+                        <div class="experience-card">
+                            <div class="experience-meta"><span>YOUR ROLE</span><time>2022 — 2024</time></div>
+                            <h3>Data Analyst / Digital Professional</h3>
+                            <h4>Your Company / Organisation</h4>
+                            <p>Add your key responsibilities, tools, achievements and the type of projects you worked on here.</p>
+                        </div>
+                    </article>
+
+                    <article class="experience-item reveal">
+                        <div class="experience-marker"><i class='bx bx-code-curly'></i></div>
+                        <div class="experience-card">
+                            <div class="experience-meta"><span>EARLIER EXPERIENCE</span><time>20XX — 20XX</time></div>
+                            <h3>Earlier Role / Learning Journey</h3>
+                            <h4>Company, Institute or Freelance</h4>
+                            <p>Use this entry for an earlier role, internship, freelance period, major learning phase or relevant professional experience.</p>
+                        </div>
+                    </article>
+
+                    <div class="experience-next-wrap">
+                        <button type="button" class="experience-next" aria-label="View next experience" title="View next experience">
+                            <i class='bx bx-chevron-down' aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="service section" id="services">
+            <div class="section-heading reveal">
+                <p class="eyebrow"></p>
+                <h2 class="heading">My <span>Services</span></h2>
+                <p class="section-intro">Practical digital services tailored to help you build, improve and grow your online presence.</p>
+            </div>
+
+            <div class="wraper">
+                <div class="box reveal">
+                    <i class='bx bx-code-alt'></i>
+                    <h2>Web Development</h2>
+                    <p>Modern, responsive websites and web applications designed around usability, performance and business goals.</p>
+                    <button type="button" class="msbtn service-details-btn" data-service="Web Development">Know More</button>
+                </div>
+
+                <div class="box reveal">
+                    <i class='bx bxs-paint'></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>Clean interfaces and thoughtful user experiences that make websites easier to understand and use.</p>
+                    <button type="button" class="msbtn service-details-btn" data-service="UI/UX Designing">Know More</button>
+                </div>
+
+                <div class="box reveal">
+                    <i class='bx bx-palette'></i>
+                    <h2>Graphic Designing</h2>
+                    <p>Visual assets and creative design support for digital brands, websites and social media.</p>
+                    <button type="button" class="msbtn service-details-btn" data-service="Graphic Designing">Know More</button>
+                </div>
+
+                <div class="box reveal">
+                    <i class='bx bx-bar-chart-alt'></i>
+                    <h2>Search Engine Optimization</h2>
+                    <p>Foundational SEO improvements that help websites become more discoverable and user-friendly.</p>
+                    <button type="button" class="msbtn service-details-btn" data-service="Search Engine Optimization">Know More</button>
+                </div>
+
+                <div class="box reveal">
+                    <i class='bx bx-slideshow'></i>
+                    <h2>Video Editing</h2>
+                    <p>Engaging video editing for social content, promotional videos and digital storytelling.</p>
+                    <button type="button" class="msbtn service-details-btn" data-service="Video Editing">Know More</button>
+                </div>
+
+                <div class="box reveal">
+                    <i class='bx bx-chalkboard'></i>
+                    <h2>Back Office</h2>
+                    <p>Digital support for content, data handling and day-to-day online business operations.</p>
+                    <button type="button" class="msbtn service-details-btn" data-service="Back Office">Know More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Working Process -->
+        <section class="process section" id="process">
+            <div class="section-heading reveal">
+                <h2 class="heading">Working <span>Process</span></h2>
+                <p class="section-intro">A simple four-step workflow that keeps your project clear, organised and moving from idea to delivery.</p>
+            </div>
+            <div class="process-grid">
+                <article class="process-step reveal"><span class="step-number">01</span><div class="step-icon"><i class='bx bx-compass'></i></div><h3>Explore & Contact</h3><p>Explore my services, portfolio and capabilities, then contact me with a brief idea of what you want to build or improve.</p></article>
+                <article class="process-step reveal"><span class="step-number">02</span><div class="step-icon"><i class='bx bx-conversation'></i></div><h3>Discuss Your Needs</h3><p>We discuss your requirements, goals, preferred style, scope, timeline and other details so the work is clearly understood.</p></article>
+                <article class="process-step reveal"><span class="step-number">03</span><div class="step-icon"><i class='bx bx-folder-open'></i></div><h3>Share Required Assets</h3><p>Provide the content, images, branding files, references, credentials or other assets needed to complete your service accurately.</p></article>
+                <article class="process-step reveal"><span class="step-number">04</span><div class="step-icon"><i class='bx bx-check-circle'></i></div><h3>Service Delivery</h3><p>I complete the agreed work, share the final result, make the necessary refinements and deliver the finished service to you.</p></article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact section contact-compact" id="contact">
+            <div class="section-heading reveal">
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <p class="section-intro">Have an idea, project or collaboration in mind? Send a message and let's discuss it.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="email-box reveal">
+                    <div class="form-header">
+                        <div class="form-icon email-icon"><i class='bx bx-envelope'></i></div>
+                        <h3>Send Me An Email</h3>
+                    </div>
+                    <form action="https://formsubmit.co/myalltask0@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Portfolio Contact - Abhay Vishwakarma">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://YOUR-DOMAIN.com/#contact">
+                        <div class="input-row">
+                            <div class="input-box"><label for="emailName">Name</label><input type="text" id="emailName" name="Name" placeholder="Your full name" required></div>
+                            <div class="input-box"><label for="emailAddress">Address</label><input type="text" id="emailAddress" name="Address" placeholder="City or country" required></div>
+                        </div>
+                        <div class="input-box"><label for="email">Email</label><input type="email" id="email" name="Email" placeholder="you@example.com" required></div>
+                        <div class="input-box"><label for="emailSubject">Email Subject</label><input type="text" id="emailSubject" name="Subject" placeholder="Project enquiry" required></div>
+                        <div class="input-box"><label for="emailMessage">Message</label><textarea id="emailMessage" name="Message" rows="7" placeholder="Describe your project, requirements or questions in brief." required></textarea></div>
+                        <button type="submit" class="submit-btn">Send Email <i class='bx bx-send'></i></button>
+                    </form>
+                </div>
+
+                <div class="whatsapp-box reveal">
+                    <div class="form-header">
+                        <div class="form-icon whatsapp-icon"><i class='bx bxl-whatsapp'></i></div>
+                        <h3>WhatsApp Me</h3>
+                    </div>
+                    <form id="whatsappForm">
+                        <div class="input-row">
+                            <div class="input-box"><label for="waName">Name</label><input type="text" id="waName" name="name" placeholder="Your full name" required></div>
+                            <div class="input-box">
+                                <label for="waPhone">Mobile</label>
+                                <input type="tel" id="waPhone" name="phone" placeholder="Your contact number" inputmode="tel" autocomplete="tel" required>
+                            </div>
+                            <div class="input-box"><label for="waCity">Address</label><input type="text" id="waCity" name="city" placeholder="Your city" required></div>
+                        </div>
+                        <div class="input-box"><label for="waMessage">Message</label><textarea id="waMessage" name="message" rows="7" placeholder="Tell me about your project." required></textarea></div>
+                    <div class="working-location-inline">
+                        <div class="working-location-copy">
+                            <div class="location-icon"><i class='bx bx-map'></i></div>
+                            <div>
+                                <span>MY WORKING LOCATION</span>
+                                <p id="workingLocationText">Ballia, Uttar Pradesh, India - 277121</p>
+                            </div>
+                        </div>
+                        <a class="see-map-link" id="mapLink" href="https://maps.app.goo.gl/GoPaUvYiBfSb7gJi6" target="_blank" rel="noopener" aria-label="See working location on Google Maps">
+                            <i class='bx bx-map-pin'></i>
+                            <span>See on Map</span>
+                        </a>
+                    </div>
+
+                    <button type="submit" class="submit-btn whatsapp-submit">Send message<i class='bx bx-right-arrow-alt'></i></button>
+                    </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Service details modal -->
+    <div class="service-modal" id="serviceModal" aria-hidden="true">
+        <div class="service-modal-backdrop" data-close-service></div>
+        <div class="service-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+            <button class="service-modal-close" type="button" data-close-service aria-label="Close"><i class='bx bx-x'></i></button>
+            <div class="service-modal-icon"><i class='bx bx-code-alt' id="serviceModalIcon"></i></div>
+            <p class="modal-label">SERVICE DETAILS</p>
+            <h2 id="serviceModalTitle">Web Development</h2>
+            <p id="serviceModalDescription"></p>
+            <div class="modal-columns">
+                <div><h4>What I can provide</h4><ul id="serviceModalList"></ul></div>
+                <div class="modal-cta"><h4>Need this service?</h4><p>Send your requirements and let's discuss the project.</p><a href="#contact" class="btn" id="serviceModalContact">Contact Me <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <a href="#home" class="logo">Abhay<span>.</span></a>
+            <p class="footer-tagline">Building useful digital experiences with code and creativity.</p>
+            <a href="#home" class="back-home" aria-label="Back to home"><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></a>
+        </div>
+        <p class="copyright">© <span id="year"></span> Abhay Vishwakarma. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
